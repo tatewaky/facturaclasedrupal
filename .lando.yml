@@ -11,6 +11,7 @@ services:
     xdebug: true
     run:
       - "cd /app && composer update"
+      - "cd /app/web && drush cr"
     config:
       conf: php.ini
 tooling:
