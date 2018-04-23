@@ -9,10 +9,8 @@ services:
     type: 'php:7.1'
     webroot: web
     xdebug: true
-    run_as_root:
-      - apt-get install vim -y
     run:
-      - cd /app && composer install
+      - "cd /app && composer update"
     config:
       conf: php.ini
 tooling:
