@@ -11,6 +11,8 @@ services:
     xdebug: true
     run_as_root:
       - apt-get install vim -y
+    run:
+      - cd /app && composer install
     config:
       conf: php.ini
 tooling:
