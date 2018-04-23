@@ -1,0 +1,19 @@
+name: facturadigital
+recipe: pantheon
+config:
+  framework: drupal8
+  site: facturadigital
+  id: 48615a72-b0e6-4de8-8c69-4f353b1bcec2
+services:
+  appserver:
+    type: 'php:7.1'
+    webroot: www
+    xdebug: true
+    run_as_root:
+      - apt-get install vim -y
+    config:
+      conf: php.ini
+tooling:
+  php:
+    cmd:
+      - php -v
