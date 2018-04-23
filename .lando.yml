@@ -7,7 +7,7 @@ config:
 services:
   appserver:
     type: 'php:7.1'
-    webroot: www
+    webroot: web
     xdebug: true
     run_as_root:
       - apt-get install vim -y
